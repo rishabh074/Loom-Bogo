@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="title">YAY! It's BOGO</div>
+
+  <!-- 1 UNIT BOX -->
+  <div class="option-box" data-unit="1">
+    <label class="option-row">
+      <div>
+        <input type="radio" name="plan" data-price="10" data-units="1" checked>
+        <span class="unit-main">1 Unit</span>
+        <span class="discount">10% Off</span><br>
+        <span class="sub-text">Standard Price</span>
+      </div>
+      <div class="price-block">
+        $10.00 USD<br>
+        <del>$24.00 USD</del>
+      </div>
+    </label>
+    <div class="variant-box" id="variant-1"></div>
+  </div>
+
+  <!-- 2 UNIT BOX -->
+  <div class="option-box popular" data-unit="2">
+    <span class="most-popular-label">MOST POPULAR</span>
+    <label class="option-row">
+      <div>
+        <input type="radio" name="plan" data-price="18" data-units="2">
+        <span class="unit-main">2 Unit</span>
+        <span class="discount discount-20">20% Off</span>
+      </div>
+      <div class="price-block">
+        $18.00 USD<br>
+        <del>$24.00 USD</del>
+      </div>
+    </label>
+    <div class="variant-box" id="variant-2"></div>
+  </div>
+
+  <!-- 3 UNIT BOX -->
+  <div class="option-box" data-unit="3">
+    <label class="option-row">
+      <div>
+        <input type="radio" name="plan" data-price="24" data-units="3">
+        <span class="unit-main">3 Unit</span>
+        <span class="discount discount-30">30% Off</span>
+      </div>
+      <div class="price-block">
+        $24.00 USD<br>
+        <del>$24.00 USD</del>
+      </div>
+    </label>
+    <div class="variant-box" id="variant-3"></div>
+  </div>
+
+  <div class="summary-row">
+    <span class="free">Free Delivery</span>
+    <span class="total">Total : <span id="total-price">$10.00 USD</span></span>
+  </div>
+
+  <button class="btn">+ Add to Cart</button>
+  <div class="powered">© Powered by Pumper</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

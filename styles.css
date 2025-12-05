@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f5f5f5;
+  padding: 40px 10px;
+}
+.card {
+  width: 462px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 26px 26px 20px;
+}
+.title {
+  text-align: center;
+  font-size: 22px;
+  color: #FF6B82;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* outer boxes for each unit */
+.option-box {
+  border: 1px solid #f0d0d0;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  background: #fff;
+  position: relative;
+}
+.option-box.popular {
+  border-color: #FF6B82;
+  padding-top: 20px;
+}
+
+/* top row inside box */
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.option-row input {
+  margin-right: 8px;
+  transform: scale(1.1);
+  accent-color: #e54b58;
+}
+.unit-main {
+  font-size: 15px;
+  font-weight: 600;
+}
+.sub-text {
+  font-size: 11px;
+  margin-left: 32px;
+}
+.price-block {
+  text-align: right;
+  font-size: 14px;
+}
+.price-block del {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* discount badges – same color for all */
+.discount {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  color: #fff;
+  background: #FF6B82;
+}
+.discount-20,
+.discount-30 {
+  background: #FF6B82;
+}
+
+/* MOST POPULAR ribbon */
+.most-popular-label {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-bottom: 5px;
+  background:#FF6B82;
+  color:#fff;
+  font-size: 11px;
+  padding: 3px 12px;
+  border-radius: 4px 4px 0 0;
+  text-transform: uppercase;
+}
+
+/* size/colour area INSIDE the same box */
+.variant-box {
+  padding: 10px 16px 12px;
+  display: none;
+  font-size: 12px;
+}
+.variant-header,
+.variant-row {
+  display: grid;
+  grid-template-columns: 28px 1fr 1fr;
+  column-gap: 8px;
+  margin-bottom: 6px;
+  align-items: center;
+}
+.variant-header span {
+  font-weight: 600;
+}
+.variant-row span {
+  font-size: 11px;
+}
+select {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+/* footer */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.summary-row .free {
+  color:#FF6B82;
+  font-weight: 600;
+}
+.summary-row .total {
+  font-weight: 700;
+}
+.btn {
+  width: 100%;
+  border: none;
+  padding: 11px 0;
+  border-radius: 6px;
+  background:#FF6B82;
+  color:#fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+.powered {
+  font-size: 11px;
+  text-align: right;
+  color:#aaa;
+  font-style: italic;
+}
