@@ -46,4 +46,5 @@ function updateUI() {
 }
 
 radios.forEach(r => r.addEventListener('change', updateUI));
-updateUI(); // initial
+updateUI(); 
+
